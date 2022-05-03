@@ -1,0 +1,111 @@
+$xxxs: 320px;
+$xxs: 445px;
+$xs: 620px;
+$s: 768px;
+$ms: 840px;
+$m: 1000px;
+$ml: 1160px;
+$l: 1200px;
+$xl: 1440px;
+$xxl: 1600px;
+
+$xxs-max: 444px;
+$xs-max: 619px;
+$s-max: 767px;
+$m-max: 999px;
+$l-max: 1199px;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+$f-primary: 'Inter';
+
+// Primary colors 
+$c-black: #28293D; 
+$c-second: #F2F3F8;
+
+$c-system: #f6f8fc;
+
+$c-red: linear-gradient(180deg, #F41436 0%, #640000 100%);
+$c-red-text: #A50000;
+$c-red-1: linear-gradient(180deg, #F41436 0%, #A50000 100%);
+$c-red-1-text: #F41436;
+$c-red-2: linear-gradient(180deg, #FF5A73 0%, #A50000 100%);
+$c-red-2-text: #FF3B3B;
+$c-red-bg-1: #F9E7E8;
+$c-green-3: #69BE31;
+$c-green-4: #F3F3F3;
+$c-error: #B82E45;
+$c-blue: #2577C9;
+$c-gray-1-text: #757575;
+
+// Text color;
+$c-black: #1A1A1A;
+$c-gray: #757575;
+$c-primary : #6F382B;
+$c-white-1: #BABABA;
+
+// Line color
+$c-gray-1: #EBEDF2;
+$c-gray-2: #D9DDE8;
+$c-gray-3: #F5F6FA;
+
+// Acent color;
+$c-red: #B82E45;
+$c-blue: #2B79F7;
+$c-blue-1: #41BAF9;
+$c-orange: #FF8800;
+$c-orange-1: #FFF4E6;
+$c-green: #06C270;
+$c-green-1: #F0F9EB;
+$c-purple: #9F36BE;
+$c-yellow: #FFF8E5;
+$c-pink: #41BAF9;
+
+
+$c-black-50: rgba($c-black, 0.5);
+$c-white: #fff;
+$c-brown: #6F382B;
+$c-brown-1: #F1ECEA;
+//$c-red: red;
+//$c-red-1: #FFE5E5;
+$c-lblue: #E8F0F7;
+$c-dblue: #385d7f;
+$c-dblue-2: #193263;
+$c-gray: #686869;
+
+$c-gray-4: #F5F6FA;
+$c-gray-5: #C7C9D9;
+$c-beige: #EDE6DF;
+$c-yellow: #FFF8E5;
+$c-border-gray: lighten($c-gray, 40%);
+$c-outline: #212121;
+$c-kumera: #7F6324;
+$c-yellow-2: #FDCC72;
+$c-light-gray: #F2F3F8;
+$c-dark-gray: #757575;
+
+$c-border: #C7C9D9;
+$border: 1px solid $c-border;
+$c-border-white: 1px solid rgba($c-white, 1);
+$c-border-red: 1px solid rgba($c-red-1-text, 1);
+
+/* Transitions */
+$duration: 0.25s;
+$speed: 0.2s;
+$ease: ease-in-out;
+$ease-out-quart: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+$transition-default: $duration $ease;
+
+// Layout
+$edge-gutter: 20px;
+$edge-gutter-s: 40px;
+$edge-gutter-m: 80px;
+
+/* Gutters */
+$gutter-xxs: 20px;
+$gutter-ms: 20px;
+$gutter-s: 25px;
+$gutter-m: 20px;
+$gutter-l: 40px;
+$gutter: 40px;

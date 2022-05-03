@@ -1,0 +1,64 @@
+@import '../../../global/index';
+
+.order-list {
+    overflow-y: scroll;
+    width: 100vw;
+    padding-bottom: 85px;
+}
+
+.order__filter {
+    overflow-x: scroll;
+    width: 100%
+}
+
+.filter__item {
+    padding: 0.25em 0.5em;
+    
+    &-text {
+        background: $c-red-1;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+}
+
+.filter-select {
+    background: $c-red-1;
+}
+
+.filter-select-text {
+    color: white;
+}
+
+.order__item {
+    box-shadow: 0px 2px 4px rgba(40, 41, 61, 0.04), 0px 8px 16px rgba(96, 97, 112, 0.16);
+}
+
+.item__total {
+    border-radius: 0 0 8px 8px;
+}
+
+.info__item {
+    margin-bottom: 0.5em;
+    height: 42px;
+}
+
+.item__total-btn {
+    padding-right: 1.25em;
+    padding-left: 1.25em;
+}
+
+.align-e {
+    text-align: end
+}
+
+.h3 {
+    background: $c-red-1;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.title-price {
+    background: $c-red-1;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}

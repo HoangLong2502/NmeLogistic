@@ -1,0 +1,83 @@
+@import "../../../global/base/variables.scss";
+
+.auth {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(20px);
+}
+
+.login {
+    width: 378px;
+    height: 678px;
+}
+
+.register{
+    width: 378px;
+    height: 678px; 
+    display: none;
+    overflow-y: scroll;
+}
+.register__btn-back {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.05);
+}
+
+.forgot-password {
+    width: 378px;
+    height: 678px; 
+    display: none;
+}
+
+.visible {
+    display: none !important;
+}
+
+.mb3 {
+    margin-bottom: 3em;
+}
+
+.step-circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 100px;
+    border: 1px solid $c-gray-2;
+    z-index: 0;
+}
+
+.step-line {
+    position: absolute;
+    top: 25%;
+    left: 50px;
+    width: 272px;
+    height: 1px;
+    background-color: $c-gray-2;
+
+}
+
+.step-control {
+    background: $c-red-1;
+    color: $c-white;
+}
+
+input {
+    -webkit-appearance: menulist;
+    padding: 0.75em;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.active {
+    display: block;
+}
+
+::placeholder {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}

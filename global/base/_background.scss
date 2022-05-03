@@ -1,0 +1,22 @@
+%bg-primary,
+.bg-primary { 
+    background: var(--color-primary);
+}
+
+%bg-white,
+.bg-white { 
+    background-color: var(--color-white);
+}
+
+%bg-gray,
+.bg-gray { 
+    background-color: var(--color-gray-2);
+}
+
+.bg-header { 
+    @extend %bg-primary;
+
+    @media (min-width: break($s)) {
+        background: transparent;
+    }
+}

@@ -1,0 +1,86 @@
+@import "../../../global/index";
+
+.orer-detail__header-back {
+    transform: rotate(180deg);
+}
+
+.order-detail__body {
+    margin-bottom: 211px;
+    overflow-y: scroll;
+}
+
+.order-body__code {
+    box-shadow: 0px 2px 4px rgba(40, 41, 61, 0.04), 0px 8px 16px rgba(96, 97, 112, 0.16);
+
+    &-number {
+        padding: 0.75em;
+    }
+}
+
+.order-body__status {
+    box-shadow: 0px 2px 4px rgba(40, 41, 61, 0.04), 0px 8px 16px rgba(96, 97, 112, 0.16);
+    padding: 1em;
+}
+
+.order-body__info-buyer {
+    box-shadow: 0px 2px 4px rgba(40, 41, 61, 0.04), 0px 8px 16px rgba(96, 97, 112, 0.16);
+    padding: 1em;
+    
+    & .info-buyer__item {
+
+        &-left {
+            width: 40%;
+        }
+
+        &-right {
+            width: 60%;
+        }
+    }
+}
+
+.order-body__package-information {
+    box-shadow: 0px 2px 4px rgba(40, 41, 61, 0.04), 0px 8px 16px rgba(96, 97, 112, 0.16);
+    padding: 1em;
+}
+
+.order-body__info-billing {
+    box-shadow: 0px 2px 4px rgba(40, 41, 61, 0.04), 0px 8px 16px rgba(96, 97, 112, 0.16);
+    padding: 1em;
+
+    & .info-billing__total {
+        margin-top: 2.75em;
+    }
+}
+
+.order-detail__action {
+    position: fixed;
+    left : 0;
+    bottom: 0;
+    z-index: 1000;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16);
+
+    &-total {
+        border-radius: 8px 8px 0 0;
+    }
+
+    & .total-profit {
+        background: $c-red-1;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+}
+
+.icon--copy {
+    width: 20px;
+    height: 20px;
+}
+
+.align-e {
+    text-align: end;
+}
+
+.w60 {
+    width: 60%
+}
