@@ -6,6 +6,10 @@ input, select {
   background-color: $c-white;
 }
 
+textarea {
+  border: 1px solid $c-border;
+}
+
 .text-input__readonly {
   background-color: $c-gray-4;
 }

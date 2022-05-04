@@ -1,4 +1,4 @@
-import Vue from 'vue'
+ import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
 
 import LoginView from '@/views/LoginView/LoginView.vue'
@@ -7,6 +7,9 @@ import HomeView from '@/views/HomeView.vue'
 
 import OrderDetailView from '@/components/OrderDetailView/OrderDetailView.vue'
 import SuccessfulPickUpView from '@/components/SuccessfulPickUp/SuccessfulPickUpView.vue'
+import DeliveryFailView from '@/components/DeliveryFailView/DeliveryFailView.vue'
+
+import CartBZIView from '@/views/CartBZIView/CartBZIView.vue'
 // Tối ưu
 
 
@@ -44,7 +47,17 @@ const routes: Array<RouteConfig> = [
     path: '/quan-ly-order/:id/successful-pick-up',
     name: 'successful-pick-up',
     component: SuccessfulPickUpView,
-  }
+  },
+  {
+    path: '/quan-ly-order/:id/delivery-fail',
+    name: 'delivery-fail',
+    component: DeliveryFailView,
+  },
+  {
+    path: '/quan-ly-vi-BZI',
+    name: 'cart-BZI',
+    component: CartBZIView,
+  },
 ]
 
 const router = new VueRouter({

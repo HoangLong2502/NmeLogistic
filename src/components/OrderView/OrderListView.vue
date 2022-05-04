@@ -31,8 +31,8 @@
                   class="h7 border-radius pt025 pb025 pl05 pr05 orange bg-yellow"
                   v-if="item.status_order == 2 || item.status_order == 4">Đang thực hiện</div>
                 <div 
-                  class="h7 border border-radius pt025 pb025 pl05 pr05"
-                  v-if="item.status_order == 3">Thành công</div>
+                  class="h7 border-radius pt025 pb025 pl05 pr05 red-1 bg-red-faild"
+                  v-if="item.status_order == 5">Đã huỷ</div>
               </div>
               <div class="item__info pt075 pr1 pl1">
                 <div class="info__item f jcb ">

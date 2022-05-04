@@ -69,6 +69,14 @@
                     <div class="orange h7">Đang thực hiện (Đã lấy hàng)</div>
                     <div class="icon icon--back"></div>
                 </div>
+
+                <!-- Đã huỷ (Đang trả hàng về kho) -->
+                <div 
+                    v-if="Order.status_order == 5"
+                    class="order-body__status f aic jcb mb1 border-radius bg-red-faild">
+                    <div class="red-1 h7">Đã huỷ (Đang trả hàng về kho)</div>
+                    <div class="icon icon--back"></div>
+                </div>
             </div>
             <!-- Order-body__info-buyer -->
             <div class="order-body__info-buyer border-radius mb1 bg-white-1">
@@ -262,8 +270,8 @@
                         <div class="h6"> {{ Order.deposit_amount }} </div>
                     </div>
                     <div class="w50 align-c border-right">
-                        <div class="h6 gray">Lợi nhuận</div>
-                        <div class="total-profit h7"> {{ Order.shipper_profit}} </div>
+                        <div class="h6 gray">Tiền cần thu</div>
+                        <div class="h6"> {{ Order.shipper_profit}} </div>
                     </div>
                     <div class="w50 align-e">
                         <div class="h6 gray">Lợi nhuận</div>
@@ -276,12 +284,46 @@
                     </div>
                 </div>
                 <div class="order-detail__action-btn f aic jcb pt1 pb1 pl1 pr1 bg-gray-1">
-                    <div class="btn-cancel w100 h5 pt1 pb1 border-radius border align-c bg-white-1">
-                        Giao thất bại
+                    <div 
+                        class="btn-cancel w100 h5 pt1 pb1 border-radius border align-c bg-white-1">
+                         <router-link :to="{ name: 'delivery-fail', params : { id : Order.id }}">
+                            Giao thất bại
+                         </router-link>
                     </div>
                     <div class="btn-action w100 h5 ml1 pt1 pb1 border-radius align-c bg-red-1 white"
                         >
                         Giao thành công
+                    </div>
+                </div>
+            </div>
+
+            <!-- Đã huỷ (Đang trả hàng về kho) -->
+            <div 
+                class="order-detail__action bg-gray-1"
+                v-if="Order.status_order == 5">
+                <div class="order-detail__action-total f aic jcb pt1 pb1 pr1 pl1 bg-gray-2">
+                    <div class="w50 border-right">
+                        <div class="h6 gray">Tiền cần thu</div>
+                        <div class="h6"> {{ Order.deposit_amount }} </div>
+                    </div>
+                    <div class="w50 align-c border-right">
+                        <div class="h6 gray">Tiền cần thu</div>
+                        <div class="h6"> {{ Order.shipper_profit}} </div>
+                    </div>
+                    <div class="w50 align-e">
+                        <div class="h6 gray">Lợi nhuận</div>
+                        <div class="total-profit h7"> {{ Order.shipper_profit}} </div>
+                    </div>
+                </div>
+                <div class="order-detail__action-btn f aic jcb pt1 pb1 pl1 pr1 bg-gray-1">
+                    <div 
+                        class="btn-cancel w100 h5 pt1 pb1 border-radius border align-c bg-white-1">
+                         <router-link :to="{ name: 'delivery-fail', params : { id : Order.id }}">
+                            Hỗ trợ
+                         </router-link>
+                    </div>
+                    <div class="btn-action w100 h5 ml1 pt1 pb1 border-radius align-c bg-red-1 white">
+                        Đã trả về kho
                     </div>
                 </div>
             </div>
@@ -347,7 +389,7 @@ export default {
             .catch((error) => {
                 alert(error)
             })
-        }
+        },
     },
     created() {
         this.getData()

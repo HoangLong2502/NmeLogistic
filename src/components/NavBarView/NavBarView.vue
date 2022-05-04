@@ -4,7 +4,7 @@
         class="Navbar-item f fdc aic jcc align-c"
         v-for="(item, index) in dataNav" 
         :key="index">
-        <router-link to="/">
+        <router-link :to="item.path">
             <div 
                 class="Navbar-item__logo icon mb025"
                 v-bind:class="item.icon"></div>
@@ -21,19 +21,23 @@ export default {
             dataNav : [
                 {
                     titlecontent : 'Order',
-                    icon: 'icon--order'
+                    icon: 'icon--order',
+                    path: '/quan-ly-order'
                 },
                 {
                     titlecontent : 'Ví BZI',
-                    icon: 'icon--cart'
+                    icon: 'icon--cart',
+                    path: '/quan-ly-vi-BZI'
                 },
                 {
                     titlecontent : 'Thông báo',
-                    icon: 'icon--noti'
+                    icon: 'icon--noti',
+                    path: '/quan-li-noti'
                 },
                 {
                     titlecontent : 'Tài khoản',
-                    icon: 'icon--account '
+                    icon: 'icon--account',
+                    path: '/quan-li-account'
                 }
             ]
         }
